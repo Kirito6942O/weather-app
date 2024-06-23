@@ -1,0 +1,178 @@
+/** Rochak Maharjan (Student ID:2408877) */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: linear-gradient(#4e8ee1, #e58c17);
+	min-height: 100dvh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.head {
+	width: 90%;
+	max-width: 470px;
+	color: #fff;
+	border-radius: 20px;
+	padding: 40px 35px;
+	text-align: center;
+}
+.search {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.search input {
+	border: 0;
+	outline: 0;
+	width: 100%;
+	background: #ebfffc;
+	color: #555;
+	padding: 10px 25px;
+	height: 48px;
+	border-radius: 30px;
+	margin-right: 16px;
+	font-size: 18px;
+}
+.search > button {
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	border-radius: 50%;
+	background: #ebfffc;
+	min-width: 48px;
+	min-height: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search button img {
+	width: 16px;
+}
+.cloudy {
+	width: 170px;
+	margin-top: -5px;
+}
+.weather h1 {
+	font-size: 60px;
+	font-weight: 500;
+}
+.weather h2 {
+	font-size: 45px;
+	font-weight: 400;
+	margin-top: -10px;
+}
+.pressure {
+	width: 40px;
+	margin-right: 10px;
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.pressuretext {
+	padding-top: 5px;
+	text-align: right;
+}
+.side {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 20px;
+	margin-top: 50px;
+}
+.main {
+	display: flex;
+	align-items: center;
+	text-align: left;
+}
+.main img {
+	width: 40px;
+	margin-right: 5px;
+}
+.humidityimg,
+.wind,
+.pressure {
+	font-size: 11px;
+}
+.pressure-img {
+	width: 40px;
+}
+.wind img {
+	width: 40px;
+}
+.footer {
+	text-align: center;
+	color: #fff;
+}
+.past > div {
+	padding: 3px;
+}
+.php-humidity {
+	height: 10px;
+}
+.php-wind {
+	height: 10px;
+}
+.past {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.day {
+	width: calc(50% - 10px);
+	margin-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.date {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.temperature,
+.humidity,
+.wind-speed {
+	font-size: 14px; /* Adjust font size for better readability */
+	margin-bottom: 5px; /* Add margin between temperature, humidity, and wind speed */
+}
+
+/* Adjust icon size for better visibility */
+.php-humidity img,
+.php-wind img {
+	width: 20px;
+	height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	.day {
+		width: calc(100% - 20px);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.humidityimg img,
+	.wind img,
+	.pressure img {
+		width: 24px;
+	}
+
+	.humidityimg p,
+	.wind p,
+	.pressure p {
+		font-size: 14px;
+	}
+}
